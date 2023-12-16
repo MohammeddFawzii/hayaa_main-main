@@ -159,10 +159,11 @@ class _HomeViewBodyState extends State<HomeViewBody> {
               GestureDetector(
                 onTap: () {},
                 child: SizedBox(
-                  width: screenWidth * 0.15,
+                  width: screenWidth * 0.19,
                   child: const Text(
                     "مجاورون",
-                    style: TextStyle(fontFamily: "Hayah", fontSize: 20),
+                    style: TextStyle(
+                        fontFamily: "Hayah", fontSize: 20, color: Colors.white),
                   ).tr(args: ['مجاورون']),
                 ),
               ),
@@ -174,7 +175,10 @@ class _HomeViewBodyState extends State<HomeViewBody> {
                     width: screenWidth * 0.12,
                     child: const Text(
                       "شعبي",
-                      style: TextStyle(fontFamily: "Hayah", fontSize: 22),
+                      style: TextStyle(
+                          fontFamily: "Hayah",
+                          fontSize: 22,
+                          color: Colors.white),
                     ).tr(args: ['شعبي']),
                   ),
                 ),
@@ -185,7 +189,8 @@ class _HomeViewBodyState extends State<HomeViewBody> {
                   width: screenWidth * 0.15,
                   child: const Text(
                     "متعلق",
-                    style: TextStyle(fontFamily: "Hayah", fontSize: 20),
+                    style: TextStyle(
+                        fontFamily: "Hayah", fontSize: 20, color: Colors.white),
                   ).tr(args: ['متعلق']),
                 ),
               ),

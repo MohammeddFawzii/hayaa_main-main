@@ -75,7 +75,7 @@ class _SplashViewBodyState extends State<SplashViewBody>
           child: Column(
             children: [
               SizedBox(
-                height: screenHeight * 0.45,
+                height: screenHeight * 0.55,
               ),
               SizedBox(
                 width: screenWidth * 0.55,

@@ -44,16 +44,31 @@ class ChoiceBetweenRegistrationAndLoginBody extends StatelessWidget {
             colorTwoOpacity: 0,
             radius: 0.5,
           ),
+          SizedBox(
+            height: screenHeight,
+            width: screenWidth,
+            child: Opacity(
+              opacity: 0.05,
+              child: Image.asset(
+                AppImages.waterMarkImage,
+                fit: BoxFit.cover,
+              ),
+            ),
+          ),
           SafeArea(
             child: Center(
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   const SizedBox(
-                    height: 300,
+                    height: 200,
+                  ),
+                  SizedBox(
+                    width: screenWidth * 0.77,
+                    child: Image.asset(AppImages.appPLogo),
                   ),
                   const SizedBox(
-                    height: 10,
+                    height: 100,
                   ),
                   SocialMethodButton(
                       socialName: "Google                 ",

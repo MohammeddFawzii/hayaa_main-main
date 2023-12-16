@@ -57,7 +57,7 @@ class _LoginViewBodyState extends State<LoginViewBody> {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 SizedBox(
-                  width: screenWidth * 0.45,
+                  width: screenWidth * 0.77,
                   child: Image.asset(AppImages.appPLogo),
                 ),
                 const SizedBox(

@@ -25,16 +25,11 @@ class VerticalRoomsListViewBuilder extends StatelessWidget {
         growable: true,
         rooms.length,
         (index) {
-          return Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              VerticalRoomsListItem(
-                  index: index + 1,
-                  screenWidth: screenWidth,
-                  screenHight: screenHight,
-                  roomModel: rooms[index]),
-            ],
-          );
+          return VerticalRoomsListItem(
+              index: index + 1,
+              screenWidth: screenWidth,
+              screenHight: screenHight,
+              roomModel: rooms[index]);
         },
       ),
     );

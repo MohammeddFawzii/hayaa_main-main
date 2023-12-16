@@ -69,21 +69,16 @@ class _SignupViewBody extends State<SignupViewBody> {
                   mainAxisAlignment: MainAxisAlignment.end,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
+                    const SizedBox(
+                      height: 30,
+                    ),
                     SizedBox(
                       width: screenWidth * 0.55,
                       child: Image.asset(AppImages.appPLogo),
                     ),
                     const SizedBox(
-                      height: 10,
+                      height: 30,
                     ),
-                    Text(
-                      "أهلا ضيفنا",
-                      style: TextStyle(
-                        fontFamily: "Hayah",
-                        color: Colors.white,
-                        fontSize: screenHeight * 0.07,
-                      ),
-                    ).tr(args: ["أهلا ضيفنا"]),
                     Form(
                       key: formkey,
                       child: Column(
@@ -139,7 +134,7 @@ class _SignupViewBody extends State<SignupViewBody> {
                             height: 20,
                           ),
                           Padding(
-                            padding: const EdgeInsets.only(right: 30, left: 30),
+                            padding: const EdgeInsets.only(right: 40, left: 40),
                             child: Container(
                               decoration: BoxDecoration(
                                   color: Colors.white,
@@ -324,7 +319,7 @@ class _SignupViewBody extends State<SignupViewBody> {
                                 Navigator.pushReplacementNamed(
                                     context, HomeView.id);
                               },
-                              buttonRatio: 0.6),
+                              buttonRatio: 0.8),
                           const SizedBox(
                             height: 10,
                           ),
