@@ -60,5 +60,10 @@ abstract class AppImages {
   static const String db11 = "lib/core/Utils/assets/images/11.png";
   static const String db22 = "lib/core/Utils/assets/images/22.png";
   static const String db33 = "lib/core/Utils/assets/images/33.png";
+  static const String goldenDollar =
+      "lib/core/Utils/assets/images/golden_dollar.png";
+  static const String goldenDiamond =
+      "lib/core/Utils/assets/images/golden_diamond.png";
+
   static const String UserImage = "lib/core/Utils/assets/images/user.jpeg";
 }
