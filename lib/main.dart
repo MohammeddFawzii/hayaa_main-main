@@ -1,9 +1,7 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:hayaa_main/features/auth/choice%20between%20registration%20and%20login/views/choice_between_registration_and_login_view.dart';
-import 'package:hayaa_main/features/auth/login/views/login_view.dart';
-import 'package:hayaa_main/features/auth/sinup/view/signup_view.dart';
+
 import 'package:hayaa_main/features/splash/views/splash_view.dart';
 import 'core/Utils/app_routes.dart';
 

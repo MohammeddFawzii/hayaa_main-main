@@ -1,8 +1,14 @@
+import 'dart:developer';
+
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:hayaa_main/features/agencies/views/agency_agent_view.dart';
+import 'package:hayaa_main/features/agencies/views/agency_creation_view.dart';
+import 'package:hayaa_main/features/agencies/views/agency_host_view.dart';
+import 'package:hayaa_main/features/agencies/views/agency_join_view.dart';
 import 'package:hayaa_main/features/setting/views/setting_view.dart';
 import '../../../core/Utils/app_colors.dart';
 import '../../../models/user_model.dart';
@@ -15,7 +21,6 @@ import '../../recharge_coins/views/recharge_view.dart';
 import '../../salery/view/salery_view.dart';
 import '../../store/ListViewStore.dart';
 import '../../user_leve/FirstList.dart';
-import '../views/profile_edit_view.dart';
 
 class ProfileViewBody extends StatefulWidget {
   const ProfileViewBody({
@@ -420,6 +425,21 @@ class _ProfileViewBody extends State<ProfileViewBody> {
                                               color: Colors.grey,
                                               size: 12,
                                             ),
+                                            onTap: () {
+                                              if (userModel.type == "agent") {
+                                                Navigator.pushNamed(context,
+                                                    AgencyAgentView.id);
+                                              } else if (userModel.type ==
+                                                  "host") {
+                                                Navigator.pushNamed(context,
+                                                    AgencyHostView.id);
+                                              } else {
+                                                Navigator.pushNamed(context,
+                                                    AgencyJoiningView.id);
+                                              }
+
+                                              log(userModel.type);
+                                            },
                                             leading: const Icon(
                                               Icons.favorite,
                                               color: Colors.greenAccent,
